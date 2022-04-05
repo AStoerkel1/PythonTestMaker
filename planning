@@ -1,0 +1,19 @@
+1. read from the file under test,
+2. pick out all of the Function signatures,
+3. write a new method signature to a file
+    -include filler implementation
+4. Write the method signature to the runner file
+5. run the runner.
+
+
+
+other things I'll need:
+createTests.py
+testRunner.py
+    -should run all tests individually in setup-test-teardown order
+wrapper methods for-
+    @test:
+        should print pass/fail and the assertion error
+    @setup
+    @teardown
+
