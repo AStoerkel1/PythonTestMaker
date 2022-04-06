@@ -39,11 +39,11 @@ def createTestFile(fileUnderTest: str):
     Args:
         lines (list): list of all the lines
     """
-    with open(testFile, 'w') as testFile:
-        testFile.write('from PythTest import *\n')
-        testFile.write(f'from {fileUnderTest[:-3]} import *\n')
+    with open(testFile, 'w') as testF:
+        testF.write('from PythTest import *\n')
+        testF.write(f'from {fileUnderTest[:-3]} import *\n')
         for l in lines: 
-            if l.__contains__('def'):
-                writeSig(l, testFile)           
+            if l.strip().startswith('def'):
+                writeSig(l, testF)           
 
 

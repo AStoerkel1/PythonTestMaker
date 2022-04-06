@@ -1,3 +1,2 @@
-from .createTests import createTestFile
-from .pythWrappers import test
-import __main__
+from .createTests import *
+from .pythWrappers import *
