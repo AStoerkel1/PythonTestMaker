@@ -1,6 +1,4 @@
 
-import sys
-
 def writeSig(line: str, testFile):
     """
     isolates the function signature and 
@@ -22,7 +20,7 @@ def writeSig(line: str, testFile):
     
 
 def createTestFile(fileUnderTest: str):
-    TEST_FILE = f'test{fileUnderTest.capitalize()}'
+    testFile = f'test{fileUnderTest.capitalize()}'
     
     """
     open the file and readlines() as lines
@@ -41,8 +39,9 @@ def createTestFile(fileUnderTest: str):
     Args:
         lines (list): list of all the lines
     """
-    with open(TEST_FILE, 'w') as testFile:
+    with open(testFile, 'w') as testFile:
         testFile.write('from PythTest import *\n')
+        testFile.write(f'from {fileUnderTest[:-3]} import *\n')
         for l in lines: 
             if l.__contains__('def'):
                 writeSig(l, testFile)           
