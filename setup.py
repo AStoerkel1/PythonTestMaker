@@ -12,4 +12,9 @@ setup(
     long_description_content_type="text/markdown",
     author="Andrew Stoerkel",
     packages=find_packages(where="PythTest"),
+    entry_points={  # Optional
+        "console_scripts": [
+            "pythtest=PythTest.__main__:main",
+        ],
+    },
 )
