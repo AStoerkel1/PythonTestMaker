@@ -14,3 +14,7 @@ def test(func):
         except AssertionError as e:
             print(f'{func.__name__} failed: {e}')
     return wrapper
+
+"""
+TO-DO: create a setup decorator
+"""

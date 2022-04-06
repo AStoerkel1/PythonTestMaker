@@ -1,6 +1,7 @@
-from PythTest import *
+from .src.createTests import createTestFile
 import sys
 import os
+
 def main():
     command = sys.argv[1]
     if(command == 'create'):
