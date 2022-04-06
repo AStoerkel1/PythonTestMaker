@@ -13,7 +13,7 @@ sudo python3 setup.py develop
 to make the test file:
 pythtest create (file).py
 
-to run the tests:
+to run the:
 pythtest run 
 (runs all files of the form test(file).py in that directory)
 
