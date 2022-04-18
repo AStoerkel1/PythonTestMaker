@@ -2,6 +2,12 @@ from .src.createTests import createTestFile
 import sys
 import os
 
+#save the present working directory
+PWD = os.getcwd()
+#add PWD to system path
+if PWD not in sys.path:
+    sys.path.append(PWD)
+
 def main():
     command = sys.argv[1]
     if(command == 'create'):

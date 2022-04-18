@@ -1,2 +1,2 @@
-from createTests import *
-from pythWrappers import *
+from .createTests import *
+from .pythWrappers import *
