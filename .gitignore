@@ -2,3 +2,4 @@ __pycache__
 PythTest.egg-info/
 testFactorial.py
 hmm.py
+build
